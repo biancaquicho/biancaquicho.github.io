@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="project-style.css" />
+    <link rel="stylesheet" href="../style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>RiderKo</title>
+  </head>
+  <body>
+    <div class="parallax">
+      <div class="parallax-bg-holder five"></div>
+      <div class="parallax-title">RiderKo</div>
+    </div>
+    <div class="container">
+      <div class="main-cont">
+        <div class="sub-cont one">
+          <div class="sub-cont-box">
+            <div class="sub-list title"><h2>About</h2></div>
+            <div class="sub-list info">
+              <p>
+                RiderKo is a 100% Filipino developed mobile application that
+                offers on demand food and mart orders as well as door to door
+                delivery services designed to empower its partners. The purpose
+                of this case study competition is to create a business proposal
+                for RiderKo to help stand out as a Filipino owned business. This
+                case study is ranked 3rd place out of 11 teams.
+              </p>
+            </div>
+          </div>
+          <div class="sub-cont-box">
+            <div class="sub-list title"><h2>Role</h2></div>
+            <div class="sub-list info">
+              <p>
+                I joined as solo and was grouped with 3 random participants.
+                Worked as a UI/UX Designer and Researcher
+              </p>
+            </div>
+          </div>
+          <div class="sub-cont-box">
+            <div class="sub-list title"><h2>Tools Used</h2></div>
+            <div class="sub-list info">
+              <img id="skill-graphic" src="../assets/logo_canva.png" alt="" />
+              <img id="skill-graphic" src="../assets/logo_figma.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="sub-cont two">
+          <img
+            id="cover-image"
+            src="../assets/projects/five-riderko/img_riderko-cover.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="scroll-down">
+        <h4>Scroll Down</h4>
+        <img src="../assets/projects/arrow_pink.gif" width="80px" alt="" />
+      </div>
+      <div class="sections">
+        <div class="sidebar-process">
+          <h2>Process</h2>
+          <a href="#title-designproc"><p>Design Process</p></a>
+          <a href="#title-datagather"> <p>Data Gathering</p></a>
+
+          <a href="#title-compet"> <p>Competitive Analysis</p></a>
+          <a href="#title-swot"> <p>SWOT Analysis</p></a>
+          <a href="#title-solution"> <p>Solution</p></a>
+          <a href="#title-ia"> <p>Information Architecture</p></a>
+          <a href="#title-ui"> <p>High-Fi Wireframe</p></a>
+          <a href="#title-ta"> <p>Takeaways</p></a>
+        </div>
+        <div class="content-container">
+          <div class="second-container">
+            <div class="second-sub-cont">
+              <div class="title" id="title-designproc">
+                <h2>Design Process</h2>
+              </div>
+              <div class="second-cont logo">
+                <img
+                  src="../assets/projects/five-riderko/img_riderko-designprocess.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="second-container">
+              <div class="title" id="title-datagather">
+                <h2>Data Gathering</h2>
+              </div>
+              <div class="second-cont riderko-datagather">
+                <h3>1. Age</h3>
+                <div class="data-analysis">
+                  <div class="pie-chart one">
+                    <!-- <canvas id="mycanvas-one" width="200" height="180"></canvas> -->
+                    <div class="canvas-cont">
+                      <canvas id="age-chart" width="50" height="50"></canvas>
+                    </div>
+
+                    <script>
+                      var xValues = ["18-24", "25-34"];
+                      var yValues = [19, 1];
+                      var barColors = ["#f3e73a", "#ffd391"];
+                      new Chart("age-chart", {
+                        type: "pie",
+                        data: {
+                          datasets: [
+                            {
+                              backgroundColor: barColors,
+                              data: yValues,
+                            },
+                          ],
+                        },
+                        options: {
+                          legend: { display: false },
+                        },
+                      });
+                    </script>
+                    <div class="legend">
+                      <h5>Legend</h5>
+                      <table>
+                        <tr>
+                          <td><span class="dot one"></span></td>
+                          <td>
+                            <p>18</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="dot two"></span></td>
+                          <td>
+                            <p>18-24</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="dot three"></span></td>
+                          <td>
+                            <p>25-34</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="dot four"></span></td>
+                          <td>
+                            <p>35-44</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="dot five"></span></td>
+                          <td>
+                            <p>45-54</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="dot six"></span></td>
+                          <td>
+                            <p>55-64</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="dot seven"></span></td>
+                          <td>
+                            <p>Above 64</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="data-info">
+                    <p>
+                      According to this graph 95% are within the student range
+                      that's why it's important we maximize our deals, discounts
+                      and more.
+                    </p>
+                  </div>
+                </div>
+                <h3>2. City where you currently live</h3>
+                <div class="data-analysis">
+                  <div class="pie-chart two">
+                    <!-- <canvas id="mycanvas-one" width="200" height="180"></canvas> -->
+                    <div class="canvas-cont">
+                      <canvas id="loc-chart" width="50" height="50"></canvas>
+                    </div>
+
+                    <script>
+                      var xValues = [
+                        "Quezon City",
+                        "Caloocan",
+                        "Valenzuela",
+                        "Others",
+                      ];
+                      var yValues = [5, 2, 2, 11];
+                      var barColors = [
+                        "#ffa283",
+                        "#f3e73a",
+                        "#ffd391",
+                        "#aef393",
+                      ];
+                      new Chart("loc-chart", {
+                        type: "pie",
+                        data: {
+                          datasets: [
+                            {
+                              backgroundColor: barColors,
+                              data: yValues,
+                            },
+                          ],
+                        },
+                        options: {
+                          legend: { display: false },
+                        },
+                      });
+                    </script>
+                    <div class="legend">
+                      <h5>Legend</h5>
+                      <table>
+                        <tr>
+                          <td><span class="dot one"></span></td>
+                          <td>
+                            <p>Quezon City</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="dot two"></span></td>
+                          <td>
+                            <p>Caloocan</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="dot three"></span></td>
+                          <td>
+                            <p>Valenzuela</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="dot four"></span></td>
+                          <td>
+                            <p>Others</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="data-info">
+                    <p>
+                      Part of being able to cater to our customers is making
+                      sure that we understand that they're from different
+                      locations with different tastes with different needs
+                      that's why having a variety of brands benefits both
+                      RiderKo and its potential customers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <h3>3. Are you familiar with RiderKo?</h3>
+              <div class="data-analysis">
+                <div class="pie-chart one">
+                  <!-- <canvas id="mycanvas-one" width="200" height="180"></canvas> -->
+                  <div class="canvas-cont">
+                    <canvas
+                      id="familiarity-chart"
+                      width="50"
+                      height="50"
+                    ></canvas>
+                  </div>
+
+                  <script>
+                    var xValues = ["Yes", "No"];
+                    var yValues = [1, 19];
+                    var barColors = ["#f3e73a", "#ffa283"];
+                    new Chart("familiarity-chart", {
+                      type: "pie",
+                      data: {
+                        datasets: [
+                          {
+                            backgroundColor: barColors,
+                            data: yValues,
+                          },
+                        ],
+                      },
+                      options: {
+                        legend: { display: false },
+                      },
+                    });
+                  </script>
+                  <div class="legend">
+                    <h5>Legend</h5>
+                    <table>
+                      <tr>
+                        <td><span class="dot one"></span></td>
+                        <td>
+                          <p>No</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot two"></span></td>
+                        <td>
+                          <p>Yes</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="data-info">
+                  <p>
+                    According to this graph 95% are not familiar with RiderKo.
+                  </p>
+                </div>
+              </div>
+
+              <h3>4. When you hear RiderKo, what comes into your mind?</h3>
+              <div class="second-cont riderko-compet">
+                <div class="data-analysis">
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-q4.png"
+                    alt=""
+                  />
+                </div>
+
+                <div class="data-info">
+                  <p>
+                    Most of the respondents have similar answers when asked if
+                    what comes to their mind when they hear RiderKo.
+                  </p>
+                </div>
+              </div>
+
+              <h3>5. How long have you been using food delivery apps</h3>
+              <div class="data-analysis">
+                <div class="pie-chart one">
+                  <!-- <canvas id="mycanvas-one" width="200" height="180"></canvas> -->
+                  <div class="canvas-cont">
+                    <canvas id="q5-chart" width="50" height="50"></canvas>
+                  </div>
+
+                  <script>
+                    var xValues = ["No", "Yes"];
+                    var yValues = [9, 7, 1, 3];
+                    var barColors = [
+                      "#ffa283",
+                      "#f3e73a",
+                      "#ffd391",
+                      "#aef393",
+                    ];
+                    new Chart("q5-chart", {
+                      type: "pie",
+                      data: {
+                        datasets: [
+                          {
+                            backgroundColor: barColors,
+                            data: yValues,
+                          },
+                        ],
+                      },
+                      options: {
+                        legend: { display: false },
+                      },
+                    });
+                  </script>
+                  <div class="legend">
+                    <h5>Legend</h5>
+                    <table>
+                      <tr>
+                        <td><span class="dot one"></span></td>
+                        <td>
+                          <p>2 years or more</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot two"></span></td>
+                        <td>
+                          <p>1 Year</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot three"></span></td>
+                        <td>
+                          <p>3-6 Months</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot four"></span></td>
+                        <td>
+                          <p>Less than a month</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="data-info">
+                  <p>
+                    This graph shows that most repondents have been using food
+                    delivery apps for more than 2 years now.
+                  </p>
+                </div>
+              </div>
+
+              <h3>
+                6. How often do you use food delivery and courier services?
+              </h3>
+              <div class="data-analysis">
+                <div class="pie-chart one">
+                  <div class="canvas-cont">
+                    <canvas id="q6-chart" width="50" height="50"></canvas>
+                  </div>
+
+                  <script>
+                    var xValues = [
+                      "2-3 times a Month",
+                      "Once a Month",
+                      "More than 4 times a Month",
+                      "Never",
+                    ];
+                    var yValues = [7, 6, 5, 2];
+                    var barColors = [
+                      "#ffa283",
+                      "#f3e73a",
+                      "#ffd391",
+                      "#aef393",
+                    ];
+                    new Chart("q6-chart", {
+                      type: "pie",
+                      data: {
+                        datasets: [
+                          {
+                            backgroundColor: barColors,
+                            data: yValues,
+                          },
+                        ],
+                      },
+                      options: {
+                        legend: { display: false },
+                      },
+                    });
+                  </script>
+                  <div class="legend">
+                    <h5>Legend</h5>
+                    <table>
+                      <tr>
+                        <td><span class="dot one"></span></td>
+                        <td>
+                          <p>2-3 times a Month</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot two"></span></td>
+                        <td>
+                          <p>Once a Month</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot three"></span></td>
+                        <td>
+                          <p>More than 4 times a Month</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot four"></span></td>
+                        <td>
+                          <p>Never</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="data-info">
+                  <p>
+                    Most of the respondents have been frequently using food
+                    delivery apps and others have never tried using it.
+                  </p>
+                </div>
+              </div>
+
+              <h3>7. What kind of promo do you prefer?</h3>
+              <div class="data-analysis">
+                <div class="bar-chart one">
+                  <div class="canvas-cont">
+                    <canvas id="q7-chart" width="100" height="100"></canvas>
+                  </div>
+
+                  <script>
+                    const data = {
+                      labels: [
+                        "Percent Off (25% or 50% off)",
+                        "Flat Promo (10 pesos off)",
+                        "Free Delivery",
+                        "Buy 1 Take 1",
+                      ],
+                      datasets: [
+                        {
+                          data: [12, 5, 14, 9],
+                          backgroundColor: [
+                            "#ffa283",
+                            "#f3e73a",
+                            "#ffd391",
+                            "#aef393",
+                          ],
+                        },
+                      ],
+                    };
+
+                    // config
+                    const config1 = {
+                      type: "bar",
+                      data,
+                      options: {
+                        scales: {
+                          y: {
+                            beginAtZero: true,
+                          },
+                        },
+                      },
+                    };
+                    const myChart = new Chart(
+                      document.getElementById("q7-chart"),
+                      config1
+                    );
+                  </script>
+                  <div class="legend">
+                    <h5>Legend</h5>
+                    <table>
+                      <tr>
+                        <td><span class="dot one"></span></td>
+                        <td>
+                          <p>Percent Off (25% or 50% off)</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot two"></span></td>
+                        <td>
+                          <p>Flat Promo (10 pesos off)</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot three"></span></td>
+                        <td>
+                          <p>Free Delivery</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot four"></span></td>
+                        <td>
+                          <p>Buy 1 Take 1</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="data-info">
+                  <p>
+                    According to this graph, most of them prefer Free Delivery
+                    as a promo from the app.
+                  </p>
+                </div>
+              </div>
+
+              <h3>
+                8. What problems do you usually encounter when using a Food
+                Delivery or Courier App?
+              </h3>
+              <div class="data-analysis">
+                <div class="bar-chart one">
+                  <div class="canvas-cont">
+                    <canvas id="q8-chart" width="300" height="300"></canvas>
+                  </div>
+
+                  <script>
+                    const data1 = {
+                      labels: [
+                        "Customer Service",
+                        "Costly Delivery Fee",
+                        "Late Delivery",
+                        "Log in issues",
+                        "Mismatch of Orders",
+                        "Poor visibility on the courier delivery operation",
+                        "Delivering goods with damage",
+                        "Problems with Payment Method",
+                        "Poor Packaging",
+                        "Missing Items",
+                      ],
+                      datasets: [
+                        {
+                          data: [1, 14, 6, 1, 7, 3, 2, 0, 5, 1],
+                          backgroundColor: [
+                            "#ffa283",
+                            "#f3e73a",
+                            "#ffd391",
+                            "#aef393",
+                            "#fabcfa",
+                            "#98e7ff",
+                            "#fcb5cd",
+                            "#bbfafc",
+                            "#ff9900",
+                            "#74322d",
+                          ],
+                        },
+                      ],
+                    };
+                    const config2 = {
+                      type: "bar",
+                      data: data1,
+                      options: {
+                        scales: {
+                          y: {
+                            beginAtZero: true,
+                          },
+                        },
+                      },
+                    };
+                    const myChart2 = new Chart(
+                      document.getElementById("q8-chart"),
+                      config2
+                    );
+                  </script>
+                  <div class="legend">
+                    <h5>Legend</h5>
+                    <table>
+                      <tr>
+                        <td><span class="dot one"></span></td>
+                        <td>
+                          <p>Customer Service</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot two"></span></td>
+                        <td>
+                          <p>Costly Delivery Fee</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot three"></span></td>
+                        <td>
+                          <p>Late Delivery</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot four"></span></td>
+                        <td>
+                          <p>Log in issues</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot five"></span></td>
+                        <td>
+                          <p>Mismatch of Orders</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot six"></span></td>
+                        <td>
+                          <p>
+                            Poor visibility on the courier delivery operation
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot seven"></span></td>
+                        <td>
+                          <p>Delivering goods with damage</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot eight"></span></td>
+                        <td>
+                          <p>Problems with Payment Method</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot nine"></span></td>
+                        <td>
+                          <p>Poor Packaging</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot ten"></span></td>
+                        <td>
+                          <p>Missing Items</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="data-info">
+                  <p>
+                    Most of the users encounter Costly Delivery Fee when
+                    ordering through the application. Some of them also
+                    encountered Mismatch of the orders and Late Delivery.
+                    Although zero users or none of them has encountered problems
+                    with Payment Method.
+                  </p>
+                </div>
+              </div>
+
+              <h3>
+                9. Why do you like using Food Delivery or Courier Service App?
+              </h3>
+              <div class="data-analysis">
+                <div class="bar-chart one">
+                  <div class="canvas-cont">
+                    <canvas id="q9-chart" width="300" height="300"></canvas>
+                  </div>
+
+                  <script>
+                    const data2 = {
+                      labels: [
+                        "Convenient",
+                        "Accessible",
+                        "Good Delivery Experience",
+
+                        "Has promotions, discount, cashback",
+                        "Variety of Options",
+                        "Real time updates",
+                        "On time Delivery",
+                      ],
+                      datasets: [
+                        {
+                          data: [18, 13, 5, 10, 10, 2, 1],
+                          backgroundColor: [
+                            "#ffa283",
+                            "#f3e73a",
+                            "#ffd391",
+                            "#aef393",
+                            "#fabcfa",
+                            "#98e7ff",
+                            "#fcb5cd",
+                          ],
+                        },
+                      ],
+                    };
+                    const config3 = {
+                      type: "bar",
+                      data: data2,
+                      options: {
+                        scales: {
+                          y: {
+                            beginAtZero: true,
+                          },
+                        },
+                      },
+                    };
+                    const myChart3 = new Chart(
+                      document.getElementById("q9-chart"),
+                      config3
+                    );
+                  </script>
+                  <div class="legend">
+                    <h5>Legend</h5>
+                    <table>
+                      <tr>
+                        <td><span class="dot one"></span></td>
+                        <td>
+                          <p>Convenient</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot two"></span></td>
+                        <td>
+                          <p>Accessible</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot three"></span></td>
+                        <td>
+                          <p>Good Delivery Experience</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot four"></span></td>
+                        <td>
+                          <p>Has promotions, discount, cashback</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot five"></span></td>
+                        <td>
+                          <p>Variety of Options</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot six"></span></td>
+                        <td>
+                          <p>Real time updates</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot seven"></span></td>
+                        <td>
+                          <p>On time delivery</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="data-info">
+                  <p>
+                    18 out of 20 says that they use Food Delivery Apps because
+                    it is Convenient. This data signifies that most of the
+                    respondents likely use the application more often as it is a
+                    personal need that allows them to easily order through the
+                    use of the application.
+                  </p>
+                </div>
+              </div>
+
+              <h3>
+                10. What feature would you like a delivery app in general to
+                have to improve their service?
+              </h3>
+              <div class="second-cont riderko-compet">
+                <div class="data-analysis">
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-q10.png"
+                    alt=""
+                  />
+                </div>
+
+                <div class="data-info">
+                  <p>
+                    The suggestions or recommendations provided by the users of
+                    similar apps help to better understand what can be improved
+                    or can be added as a feature of the application.
+                  </p>
+                </div>
+              </div>
+
+              <div class="second-container">
+                <div class="title" id="title-compet">
+                  <h2>Competitive Analysis</h2>
+                </div>
+                <div class="second-cont riderko-compet">
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-competanalysis.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="second-container">
+                <div class="title" id="title-swot">
+                  <h2>SWOT Analysis</h2>
+                </div>
+                <div class="second-cont riderko-swot">
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-swot.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="second-container">
+                <div class="title" id="title-solution">
+                  <h2>Solution</h2>
+                </div>
+                <div class="second-cont">
+                  <div class="riderko-solution">
+                    <h4>Support Local</h4>
+                    <p>
+                      supporting local brands, shops and entrepeneurs with their
+                      business by giving them priority within the application
+                    </p>
+                  </div>
+                  <div class="riderko-solution">
+                    <h4>OTP for delivery confirmation</h4>
+                    <p>
+                      for security purposes, OTP can be sent to the rider once
+                      item is delivered
+                    </p>
+                  </div>
+                  <div class="riderko-solution">
+                    <h4>Continuous app updates</h4>
+                    <p>
+                      providing a notification from restaurant subscriptions
+                    </p>
+                  </div>
+                  <div class="riderko-solution">
+                    <h4>
+                      Partnerships with brands, celebrities, universities and
+                      companies
+                    </h4>
+                    <p>
+                      consider partnering with other entities for wide range of
+                      network
+                    </p>
+                  </div>
+                  <div class="riderko-solution">
+                    <h4>Promotional Materials</h4>
+                    <p>
+                      create promotional materials that can be used for
+                      day-to-day life such as fan with QR code that can be
+                      scanned by potential users of the application
+                    </p>
+                  </div>
+                  <div class="riderko-solution">
+                    <h4>Internships</h4>
+                    <p>
+                      provide internships for students of partnered universities
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="second-container">
+                <div class="title" id="title-ia">
+                  <h2>Information Architecture</h2>
+                </div>
+                <div class="second-cont riderko-ia">
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-infoarchi.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="second-container">
+                <div class="title" id="title-ui">
+                  <h2>High-Fidelity Wireframe</h2>
+                </div>
+                <div class="second-cont riderko-wireframes">
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui1.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui2.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui3.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui4.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui5.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui6.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui7.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui8.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui9.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui10.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui11.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui12.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui13.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="title" id="title-ta">
+                <h2>Takeaways</h2>
+              </div>
+              <div class="second-cont">
+                <div class="takeaway-subtitle">
+                  <h3>Summary</h3>
+                  <p>
+                    During the 2-day event, I was able to be grouped with three
+                    other members and was able to maximize the use of Figma from
+                    Brainstorming to creating Information Architecture and User
+                    Interfaces of the Mobile Application.
+                  </p>
+                  <p>
+                    We are very happy and pleased to receive an award from
+                    KadaKareer and RiderKo as the 3rd placer out of 11 teams of
+                    HacKada: Business Challenge Competition.
+                  </p>
+                  <p>
+                    Our team was able to create solutions that can help RiderKo
+                    standout from other similar platforms or applications.
+                  </p>
+                </div>
+                <div class="takeaway-subtitle">
+                  <h3>Challenges</h3>
+                  <h4>Short Period</h4>
+                  <p>
+                    We are only given 24 hours to finish our final output, which
+                    includes user research, creating information architecture,
+                    user interfaces, and presentation.
+                  </p>
+                  <h4>Supported Locations of RiderKo</h4>
+                  <p>
+                    We have to consider users from different locations in and
+                    outside Metro Manila as RiderKo only supports some locations
+                    for now. I would have liked for potential customers to try
+                    the application in order to support the Testing Phase.
+                  </p>
+                </div>
+                <div class="takeaway-subtitle">
+                  <h3>Lessons Learned</h3>
+                  <ul>
+                    <li>
+                      I was able to team up with random people and find our
+                      strengths to quickly finish the case study.
+                    </li>
+                    <li>
+                      Focus more on the user research and competitive audits,
+                      not just the visual design of the application.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="to-top"><i class="fas fa-arrow-up"></i></a>
+    <script>
+      const toTop = document.querySelector(".to-top");
+
+      toTop.addEventListener("click", function () {
+        window.scrollTo(0, 0);
+      });
+    </script>
+    <footer>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/trixquicho/"
+          ><i class="fa-brands fa-linkedin fa-lg"></i
+        ></a>
+        <a href="https://github.com/trix0428"
+          ><i class="fa-brands fab fa-github fa-lg"></i
+        ></a>
+        <a href="https://www.behance.net/trixquicho"
+          ><i class="fa-brands fa-square-behance fa-lg"> </i
+        ></a>
+      </div>
+      <!-- <div class="footer-navigation">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#cont-second">About</a>
+        <a class="nav-link" href="#cont-third">Projects</a>
+        <a class="nav-link" href="#cont-fourth">Awards</a>
+        <a class="nav-link" href="#cont-fifth">Contact</a>
+      </div> -->
+      <p>Copyright © 2022 Bianca Beatrix Quicho. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
